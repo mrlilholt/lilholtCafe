@@ -2,12 +2,10 @@
   "name": "lilholt-cafe-site",
   "version": "1.0.0",
   "description": "A fullpage OS for Lilholt Cafe that streams a YouTube playlist, displays weekly dinners, and includes a clock.",
-  "main": "src/app.js",
   "scripts": {
     "dev": "vite --root public",
     "build": "vite build --root public",
     "start": "vite preview --port 3000 --root public"
-  
   },
   "keywords": [
     "cafe",
