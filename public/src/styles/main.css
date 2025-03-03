@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6c757d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.clock {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dinner-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dinner-list li {
+    background: #e9ecef;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.youtube-player {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6c757d;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.app {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+/* Clock card: let it shrink to fit the text */
+.card.clock-card {
+    flex: 0 0 auto;
+    max-width: max-content;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* YouTube card: remove extra padding and let the iframe determine the size */
+.card.youtube-card {
+    flex: 0 0 auto;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Ensure the YouTubePlayer component’s iframe fits within its container */
+.youtube-player iframe {
+    display: block;
+    width: 100%;
+    max-width: 560px; /* desired max width */
+    height: 315px;    /* desired height maintaining aspect ratio */
+    border: 0;
+}
