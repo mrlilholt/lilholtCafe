@@ -1,3 +1,4 @@
+# filepath: /Users/alilholt/lilholt-cafe-site/netlify.toml
 [build]
   command = "npm run build"
   publish = "dist"
