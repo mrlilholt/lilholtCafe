@@ -4,10 +4,10 @@
   "description": "A fullpage OS for Lilholt Cafe that streams a YouTube playlist, displays weekly dinners, and includes a clock.",
   "main": "src/app.js",
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production",
-    "deploy": "netlify deploy --prod",
-    "dev": "vite"
+    "dev": "vite --root public",
+    "build": "vite build --root public",
+    "start": "vite preview --port 3000 --root public"
+  
   },
   "keywords": [
     "cafe",
