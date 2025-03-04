@@ -50,6 +50,7 @@ h1 {
   margin: 8px 0;
   padding: 8px 12px;
   border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .youtube-player {
@@ -136,13 +137,16 @@ h1 {
 
 /* Example styles to give a restaurant-menu feel */
 .dinner-display {
-  font-family: 'Georgia', serif;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  /* Remove the previous Georgia font */
 }
 
 .dinner-display h2 {
-  color: #8c5e3c;
+  color: #4c88a2;  /* Use the same mid blue as other headers */
   text-align: center;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 /* Dinner Form */
