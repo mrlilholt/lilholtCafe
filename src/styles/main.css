@@ -70,21 +70,51 @@ h1 {
     margin-bottom: 40px;
 }
 
-.cards {
+/* Update default menu look for cards */
+.card {
+    background-color: #fff8f0; /* warm, slightly creamy background */
+    border: 2px solid #d4a373; /* border with an earthy tone */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    font-family: 'Georgia', serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* You might want to style headers inside the cards (like for dish names) */
+  .card h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    color: #8c5e3c;
+    margin-bottom: 10px;
+  }
+  
+  /* For list items in the dinner list (if applicable) */
+  .dinner-list li {
+    background: #fef6e4;
+    border: 1px solid #d4a373;
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Optionally, style the overall cards container to resemble a restaurant menu layout */
+  .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-}
-
-.card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fcf8f2;
     padding: 20px;
-    flex: 1 1 300px;
-    max-width: 300px;
-}
+  }
 /* Clock card: let it shrink to fit the text */
 .card.clock-card {
     flex: 0 0 auto;
