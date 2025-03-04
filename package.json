@@ -4,7 +4,7 @@
   "description": "A fullpage OS for Lilholt Cafe that streams a YouTube playlist, displays weekly dinners, and includes a clock.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --emptyOutDir",
     "start": "vite preview --port 3000"
   },
   "keywords": [
