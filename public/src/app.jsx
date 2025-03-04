@@ -19,7 +19,7 @@ const dinners = [
 const App = () => {
     return (
         <div className="app">
-            <img src="/images/lilholtCafe.png" alt="Lilholt Cafe" className="cafe-logo" />
+            <img src="images/lilholtCafe.png" alt="Lilholt Cafe" className="cafe-logo" />
             <div className="cards">
                 <div className="card clock-card">
                     <Clock />
