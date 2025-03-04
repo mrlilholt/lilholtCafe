@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import Clock from './components/Clock.jsx';
 import DinnerDisplay from './components/DinnerDisplay.jsx';
 import YouTubePlayer from './components/YouTubePlayer.jsx';
+import Weather from './components/Weather.jsx';
 import './styles/main.css';
 
 const dinners = [
@@ -18,7 +19,7 @@ const dinners = [
 const App = () => {
     return (
         <div className="app">
-            <h1>Welcome to Lilholt Cafe</h1>
+            <img src="/images/lilholtCafe.png" alt="Lilholt Cafe" className="cafe-logo" />
             <div className="cards">
                 <div className="card clock-card">
                     <Clock />
@@ -29,6 +30,7 @@ const App = () => {
                 <div className="card youtube-card">
                     <YouTubePlayer playlistId="PLjwiCt7m0sVp186Ox3eKijOO2xBHMYAbE" />
                 </div>
+                <Weather />
             </div>
         </div>
     );
