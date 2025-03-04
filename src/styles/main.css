@@ -145,3 +145,47 @@ h1 {
   display: block;
   margin: 0 auto; /* optional center alignment */
 }
+
+/* Example styles to give a restaurant-menu feel */
+.dinner-display {
+  font-family: 'Georgia', serif;
+}
+
+.dinner-display h2 {
+  color: #8c5e3c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dinner-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dinner-list li {
+  background: #fef6e4;
+  border: 1px solid #d4a373;
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.dinner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dinner-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.dinner-form input,
+.dinner-form select {
+  padding: 6px;
+  border: 1px solid #d4a373;
+  border-radius: 4px;
+}

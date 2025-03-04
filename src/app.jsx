@@ -6,16 +6,6 @@ import YouTubePlayer from './components/YouTubePlayer.jsx';
 import Weather from './components/Weather.jsx';
 import './styles/main.css';
 
-const dinners = [
-    'Spaghetti Bolognese',
-    'Chicken Tacos',
-    'Vegetable Stir Fry',
-    'Beef Stew',
-    'Grilled Salmon',
-    'Pasta Primavera',
-    'Stuffed Peppers'
-];
-
 const App = () => {
     return (
         <div className="app">
@@ -25,7 +15,7 @@ const App = () => {
                     <Clock />
                 </div>
                 <div className="card">
-                    <DinnerDisplay dinners={dinners} />
+                    <DinnerDisplay />
                 </div>
                 <div className="card youtube-card">
                     <YouTubePlayer playlistId="PLjwiCt7m0sVp186Ox3eKijOO2xBHMYAbE" />
