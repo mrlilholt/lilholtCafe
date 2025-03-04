@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5faff; /* a very light blue/gray */
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #6c757d;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Header & Footer (if used) */
+header,
+footer {
+  background-color: #4c88a2;  /* a clean mid blue */
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -33,16 +38,18 @@ h1 {
     margin: 20px 0;
 }
 
+/* Dinner List within Cards */
 .dinner-list {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .dinner-list li {
-    background: #e9ecef;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+  background: #e0f3fb;    /* a very light blue */
+  border: 1px solid #bcdff1; /* light blue border */
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 
 .youtube-player {
@@ -50,19 +57,10 @@ h1 {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #6c757d;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+/* App Container */
 .app {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f0f2f5;
+  padding: 20px;
+  background-color: #f5faff;
 }
 
 h1 {
@@ -70,51 +68,40 @@ h1 {
     margin-bottom: 40px;
 }
 
-/* Update default menu look for cards */
+/* Card Styles */
 .card {
-    background-color: #fff8f0; /* warm, slightly creamy background */
-    border: 2px solid #d4a373; /* border with an earthy tone */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    flex: 1 1 300px;
-    max-width: 300px;
-    font-family: 'Georgia', serif;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* You might want to style headers inside the cards (like for dish names) */
-  .card h2 {
-    font-family: 'Georgia', serif;
-    font-size: 1.5em;
-    color: #8c5e3c;
-    margin-bottom: 10px;
-  }
-  
-  /* For list items in the dinner list (if applicable) */
-  .dinner-list li {
-    background: #fef6e4;
-    border: 1px solid #d4a373;
-    margin: 8px 0;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-family: 'Georgia', serif;
-  }
-  
-  /* Optionally, style the overall cards container to resemble a restaurant menu layout */
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    background-color: #fcf8f2;
-    padding: 20px;
-  }
+  background-color: #ffffff;         /* white background */
+  border: 2px solid #bcdff1;           /* light blue border */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Headings */
+.card h2 {
+  font-size: 1.5em;
+  color: #4c88a2;  /* match your header blue */
+  margin-bottom: 10px;
+}
+
+/* Cards Container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #f5faff;
+  padding: 20px;
+}
+
 /* Clock card: let it shrink to fit the text */
 .card.clock-card {
     flex: 0 0 auto;
@@ -139,11 +126,12 @@ h1 {
     border: 0;
 }
 
+/* Logo */
 .cafe-logo {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* optional center alignment */
+  margin: 0 auto;
 }
 
 /* Example styles to give a restaurant-menu feel */
@@ -157,19 +145,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-.dinner-list {
-  list-style: none;
-  padding: 0;
-}
-
-.dinner-list li {
-  background: #fef6e4;
-  border: 1px solid #d4a373;
-  margin: 8px 0;
-  padding: 8px 12px;
-  border-radius: 6px;
-}
-
+/* Dinner Form */
 .dinner-form {
   display: flex;
   flex-direction: column;
@@ -186,6 +162,6 @@ h1 {
 .dinner-form input,
 .dinner-form select {
   padding: 6px;
-  border: 1px solid #d4a373;
+  border: 1px solid #bcdff1;
   border-radius: 4px;
 }
