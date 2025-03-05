@@ -4,6 +4,7 @@ import Clock from './components/Clock.jsx';
 import DinnerDisplay from './components/DinnerDisplay.jsx';
 import YouTubePlayer from './components/YouTubePlayer.jsx';
 import Weather from './components/Weather.jsx';
+import AudioPlayer from './components/AudioPlayer.jsx';
 import './styles/main.css';
 
 const App = () => {
@@ -20,7 +21,12 @@ const App = () => {
                 <div className="card youtube-card">
                     <YouTubePlayer playlistId="PLjwiCt7m0sVp186Ox3eKijOO2xBHMYAbE" />
                 </div>
-                <Weather />
+                <div className="card">
+                    <Weather />
+                </div>
+                <div className="card">
+                    <AudioPlayer />
+                </div>
             </div>
         </div>
     );
