@@ -6,7 +6,7 @@ import FastRewindIcon from '@mui/icons-material/FastRewind';
 import FastForwardIcon from '@mui/icons-material/FastForward';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
-import './main.css';
+//import './main.css';
 
 const AudioPlayer = () => {
   const audioRef = useRef(null);
