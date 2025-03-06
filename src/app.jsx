@@ -4,6 +4,8 @@ import Clock from './components/Clock.jsx';
 import DinnerDisplay from './components/DinnerDisplay.jsx';
 import Weather from './components/Weather.jsx';
 import AudioPlayer from './components/AudioPlayer.jsx';
+import MirasAgenda from './components/MirasAgenda.jsx';
+import SheasAgenda from './components/SheasAgenda.jsx';
 import './styles/main.css';
 
 const App = () => {
@@ -17,16 +19,17 @@ const App = () => {
                 <div className="card">
                     <DinnerDisplay />
                 </div>
-                {/*
-                <div className="card youtube-card">
-                    <YouTubePlayer playlistId="PLjwiCt7m0sVp186Ox3eKijOO2xBHMYAbE" />
-                </div>
-                */}
                 <div className="card">
                     <Weather />
                 </div>
                 <div className="card">
                     <AudioPlayer />
+                </div>
+                <div className="card">
+                    <MirasAgenda />
+                </div>
+                <div className="card">
+                    <SheasAgenda />
                 </div>
             </div>
         </div>
