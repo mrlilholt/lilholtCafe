@@ -1,4 +1,3 @@
-//// filepath: /Users/alilholt/lilholt-cafe-site/src/components/MirasAgenda.jsx
 import React, { useState } from 'react';
 
 const MirasAgenda = () => {
@@ -15,6 +14,11 @@ const MirasAgenda = () => {
   const toggleItem = (index) => {
     const updated = [...items];
     updated[index].done = !updated[index].done;
+    setItems(updated);
+  };
+
+  const handleDeleteItem = (index) => {
+    const updated = items.filter((_, i) => i !== index);
     setItems(updated);
   };
 
@@ -43,6 +47,11 @@ const MirasAgenda = () => {
                 {item.text}
               </span>
             </label>
+            {item.done && (
+              <button onClick={() => handleDeleteItem(idx)} className="delete-btn">
+                Delete
+              </button>
+            )}
           </li>
         ))}
       </ul>
